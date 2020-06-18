@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 400;
+}
+
+.header-container {
+    min-height: 15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4em;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #0084ff8a;
+}
+
+.title {
+    margin: 0;
+    padding: 10px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.post-container {
+    padding: 10vh;
+}
+
+.post-header-container {
+    line-height: normal;
+    font-weight: 400;
+}
+
+.post-title {
+    margin: 2vh 0;
+
+    font-weight: 800;
+    font-size: 2.8em;
+}
+
+.post-date {
+    margin: 2vh 0;
+
+    font-weight: 200;
+}
+
+.post-subtitle {
+    margin: 4vh 0 6vh;
+
+    font-size: 1.3em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content + .content {
+    margin-top: 3vh;
+}
+
+.sidebar-container {
+    padding: 10vh 3vw;
+
+    border-left: 3px solid #2e9caf31;
+    background-color: #2e9caf25;
+}
+
+.sidebar-title {
+    margin: 2vh 1vw 0 2vh;
+
+    text-align: right;
+
+    font-weight: 800;
+    font-size: 2.6em;
+}
+
+.related-post-container {
+    margin: 2.5vh 1vw 0 2.5vh;
+
+    max-width: 15vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+}
+
+.related-post {
+    margin: 1vh 0;
+
+    text-align: right;
+
+    font-size: 1.4em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 108, 191);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15vh;
+
+    font-size: 1.3em;
+    color: black;
+
+    border-radius: 5px 5px 0 0;
+
+    background-color: #32323549;
+}
+
+/*
+USED IN TUTORIAL:
+
+body {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: auto auto auto;
+}
+
+.header-container {
+	grid-column: 1 / span 2;
+}
+
+.footer-container {
+	grid-column: 1 / span 2;
+}
+*/
