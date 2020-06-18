@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    font-family: PT Sans Narrow, sans-serif;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+
+    background-image: url(https://s23574.pcdn.co/wp-content/uploads/Singular-1140x703.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title-section {
+    text-transform: uppercase;
+
+    margin: 4vh;
+}
+
+.title,
+.section-text,
+.section-button {
+    animation-name: fade-in;
+    animation-fill-mode: backwards;
+}
+
+.title {
+    font-size: 4em;
+
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
+}
+
+.section-text {
+    font-size: 1.5em;
+    font-weight: 800;
+
+    animation-delay: 0.7s;
+    animation-duration: 0.8s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+#action-section {
+    width: 80vw;
+}
+
+.section-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 5vh;
+
+    font-size: 2em;
+    font-family: PT Sans Narrow, sans-serif;
+    color: white;
+
+    background-color: #3765ab;
+    transition: background-color 0.5s;
+
+    animation-delay: 0.9s;
+    animation-duration: 0.8s;
+}
+
+.section-button:hover {
+    background-color: #73adff;
+}
