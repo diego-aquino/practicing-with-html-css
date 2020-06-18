@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #474747;
+}
+
+/* divs whose class beginning with 'square' */
+div[class^="square"] {
+    height: 25vh;
+    width: 100vw;
+
+    animation-name: change-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-color {
+    to {
+        background-color: #fa665c;
+    }
+}
+
+.square1 {
+    animation-delay: 1s;
+    background-color: #b87216;
+}
+
+.square2 {
+    animation-delay: 1.5s;
+    background-color: #4e82c2;
+}
+
+.square3 {
+    animation-delay: 2s;
+    background-color: #4ec267;
+}
+
+.square4 {
+    animation-delay: 2.5s;
+    background-color: #f2fa87;
+}
+
+
+
